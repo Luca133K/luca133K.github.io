@@ -7,14 +7,14 @@
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 20px; background-color: #f5f5f7; color: #333; }
         .container { background-color: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        h1, h2 { color: #111; }
+        h1, h2, h3 { color: #111; }
         hr { border: 0; height: 1px; background-color: #ddd; margin: 40px 0; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Privacy Policy for TvDimmer - NightCompanion</h1>
-        <p><em>Last updated: July 28, 2025</em></p>
+        <p><em>Last updated: September 21, 2025</em></p>
         
         <h2>Data Controller</h2>
         <p>The party responsible for this app is:<br>
@@ -37,16 +37,32 @@
         We only store your user ID along with your Pro status (e.g., <code>isPro: true</code>) in our database (Google Cloud Firestore). We do not store your name or email address in our database.</p>
         <p><strong>Legal Basis:</strong> The processing of this data is for the fulfillment of a contract (provision of Pro features) in accordance with Art. 6(1)(b) GDPR.</p>
 
-        <h3>Data Processing by Third Parties (Anonymous)</h3>
+        <h3>Data Processing by Third Parties</h3>
         <p><strong>Google Firebase (Firestore):</strong> To verify redeem codes for the Pro version, the app sends the entered code to the Google Firebase Firestore service for validation. This process is anonymous and does not transmit any personal data or device identifiers.</p>
+        <p><strong>Google Play Billing:</strong> To purchase the "Pro" version or other paid content, we use the Google Play Billing service. When you make a purchase, the necessary data for processing (such as payment information) is handled directly by Google. We do not receive access to your sensitive payment data. Google's privacy policy applies.</p>
         <p>For more information on how Google handles your data, please see Google's Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+        
         <h2>Data Stored Locally on Your Device</h2>
         <p>To ensure the app's functionality, certain settings are stored exclusively on your device. This data never leaves your device and includes: Filter Settings, Routine Settings, and your Theme Setting. This data is stored using Android's internal SharedPreferences function and can be removed by the user at any time by clearing the app's cache or uninstalling the app.</p>
 
         <h2>Required App Permissions</h2>
         <p><strong>Display over other apps (SYSTEM_ALERT_WINDOW):</strong> This permission is the core feature of the app. It allows us to place a semi-transparent color filter over the entire screen.</p>
         <p><strong>Run at startup (RECEIVE_BOOT_COMPLETED):</strong> This permission is required so that the "Routine" feature can become active after you restart your TV.</p>
+        <p><strong>Ignore battery optimizations (REQUEST_IGNORE_BATTERY_OPTIMIZATIONS):</strong> To ensure that the "Routine" feature works reliably at the scheduled times, the app must be able to run in the background without being shut down by the operating system's power-saving measures.</p>
+        <p><strong>Foreground service & Notifications (FOREGROUND_SERVICE & POST_NOTIFICATIONS):</strong> To function correctly, the dimmer service must run as a foreground service. Android requires that such services display a permanent notification to ensure transparency for the user.</p>
 
+        <h2>Your Rights as a User</h2>
+        <p>You have the following legal rights regarding your personal data:</p>
+        <ul>
+            <li>Right of access</li>
+            <li>Right to rectification or erasure</li>
+            <li>Right to restriction of processing</li>
+            <li>Right to object to processing</li>
+            <li>Right to data portability</li>
+        </ul>
+        <p>To exercise any of these rights, please contact us via the email address provided in the "Data Controller" section. <strong>Please note that exercising your right to erasure will result in the permanent loss of any associated purchased content, such as the "Pro" status, as we can no longer associate the purchase with your account without this data.</strong></p>
+        <p>You also have the right to lodge a complaint with a data protection supervisory authority about our processing of your personal data.</p>
+        
         <h2>Links to Third Parties</h2>
         <p><strong>Rate App:</strong> This feature links directly to our app's page on the Google Play Store. When you click it, Google's privacy policy applies.</p>
         
@@ -56,7 +72,7 @@
         <hr>
 
         <h1>Datenschutzerklärung für TvDimmer - NightCompanion</h1>
-        <p><em>Stand: 28. Juli 2025</em></p>
+        <p><em>Stand: 21. September 2025</em></p>
         
         <h2>Verantwortlicher</h2>
         <p>Verantwortlich für diese App ist:<br>
@@ -79,16 +95,32 @@
         Wir speichern in unserer Datenbank (Google Cloud Firestore) ausschließlich Ihre Nutzer-ID zusammen mit Ihrem Pro-Status (z. B. <code>isPro: true</code>). Wir speichern weder Ihren Namen noch Ihre E-Mail-Adresse dauerhaft in unserer Datenbank.</p>
         <p><strong>Rechtsgrundlage:</strong> Die Verarbeitung dieser Daten erfolgt zur Erfüllung eines Vertrags (Bereitstellung der Pro-Funktionen) gemäß Art. 6 Abs. 1 lit. b DSGVO.</p>
         
-        <h3>Datenverarbeitung durch Drittanbieter (Anonym)</h3>
+        <h3>Datenverarbeitung durch Drittanbieter</h3>
         <p><strong>Google Firebase (Firestore):</strong> Zur Überprüfung von Einlösecodes für die Pro-Version sendet die App den eingegebenen Code zur Validierung an den Dienst Google Firebase Firestore. Dieser Vorgang ist anonym und übermittelt keine personenbezogenen Daten oder Gerätekennungen.</p>
+        <p><strong>Google Play Billing:</strong> Für den Erwerb der „Pro“-Version oder anderer kostenpflichtiger Inhalte nutzen wir den Abrechnungsdienst von Google Play. Bei einem Kauf werden die für die Abwicklung notwendigen Daten (wie z.B. Zahlungsinformationen) direkt von Google verarbeitet. Wir erhalten keinen Zugriff auf Ihre sensiblen Zahlungsdaten. Es gelten hierfür die Datenschutzbestimmungen von Google.</p>
         <p>Weitere Informationen zum Datenschutz bei Google finden Sie in der Datenschutzerklärung von Google: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+        
         <h2>Daten, die lokal auf Ihrem Gerät gespeichert werden</h2>
         <p>Um die Funktionalität der App zu gewährleisten, werden bestimmte Einstellungen ausschließlich auf Ihrem Gerät gespeichert. Diese Daten verlassen Ihr Gerät zu keinem Zeitpunkt und umfassen: Filter-Einstellungen, Routine-Einstellungen und Ihre Theme-Einstellung. Diese Daten werden mithilfe der Android-internen SharedPreferences-Funktion gespeichert und können vom Nutzer jederzeit durch das Löschen des App-Caches oder die Deinstallation der App entfernt werden.</p>
         
         <h2>Erforderliche App-Berechtigungen</h2>
         <p><strong>Über anderen Apps einblenden (SYSTEM_ALERT_WINDOW):</strong> Diese Berechtigung ist die Kernfunktion der App. Sie erlaubt es uns, einen halbtransparenten Farbfilter über den gesamten Bildschirm zu legen.</p>
-        <p><strong>Beim Gerätestart ausführen (RECEIVE_BOOT_COMPLETED):</strong> Diese Berechtigung wird benötigt, damit die "Routine"-Funktion aktiv werden kann, nachdem Sie Ihren Fernseher neu gestartet haben.</p>
-        
+        <p><strong>Beim Gerätestart ausführen (RECEIVE_BOOT_COMPLETED):</strong> Diese Berechtigung wird benötigt, damit die „Routine“-Funktion aktiv werden kann, nachdem Sie Ihren Fernseher neu gestartet haben.</p>
+        <p><strong>Akku-Optimierungen ignorieren (REQUEST_IGNORE_BATTERY_OPTIMIZATIONS):</strong> Damit die „Routine“-Funktion zuverlässig zu den eingestellten Zeiten funktioniert, muss die App im Hintergrund laufen können, ohne von den Stromsparmaßnahmen des Betriebssystems beendet zu werden.</p>
+        <p><strong>Vordergrunddienst & Benachrichtigungen (FOREGROUND_SERVICE & POST_NOTIFICATIONS):</strong> Für eine stabile Funktion muss der Dimmer-Dienst als Vordergrunddienst ausgeführt werden. Android schreibt für solche Dienste die Anzeige einer dauerhaften Benachrichtigung vor, um Transparenz für den Nutzer zu gewährleisten.</p>
+
+        <h2>Ihre Rechte als Nutzer</h2>
+        <p>Ihnen stehen bezüglich Ihrer personenbezogenen Daten folgende gesetzliche Rechte zu:</p>
+        <ul>
+            <li>Recht auf Auskunft</li>
+            <li>Recht auf Berichtigung oder Löschung</li>
+            <li>Recht auf Einschränkung der Verarbeitung</li>
+            <li>Recht auf Widerspruch gegen die Verarbeitung</li>
+            <li>Recht auf Datenübertragbarkeit</li>
+        </ul>
+        <p>Wenn Sie eines dieser Rechte geltend machen möchten, kontaktieren Sie uns bitte über die im Abschnitt „Verantwortlicher“ genannte E-Mail-Adresse. <strong>Bitte beachten Sie, dass die Löschung Ihrer Daten dazu führt, dass auch damit verknüpfte erworbene Inhalte wie der „Pro-Status“ unwiderruflich verloren gehen, da wir ohne diese Daten keine Zuordnung mehr vornehmen können.</strong></p>
+        <p>Ihnen steht zudem das Recht zu, sich bei einer Datenschutz-Aufsichtsbehörde über die Verarbeitung Ihrer personenbezogenen Daten durch uns zu beschweren.</p>
+
         <h2>Links zu Drittanbietern</h2>
         <p><strong>App bewerten:</strong> Diese Funktion verlinkt direkt auf die Seite unserer App im Google Play Store. Wenn Sie darauf klicken, gelten die Datenschutzbestimmungen von Google.</p>
 
