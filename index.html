@@ -31,8 +31,8 @@
             
             <h3>Google Sign-In (Firebase Authentication)</h3>
             <p><strong>Purpose of Processing:</strong> To securely link your "Pro" status to your account, this app offers a sign-in option via a Google account. This service is provided by "Firebase Authentication," a service of Google Ireland Limited. This allows you to use unlocked features across multiple devices. The processing of data by Google Firebase is based on a Data Processing Agreement in accordance with Art. 28 GDPR. We do not receive access to your Google password or other login credentials; these are managed solely by Google.</p>
-            <p><strong>Data Collected:</strong> When you sign in with Google, we receive access to your email address, your name, and a unique user ID (Firebase UID).</p>
-            <p><strong>Data Storage & Transfer:</strong> Your email address and name are stored within Firebase's Authentication system to uniquely identify your account. In our application database (Google Cloud Firestore), we only store your anonymous user ID along with your Pro status. Data processed by Google may also be transferred to countries outside the EU, such as the USA. Google uses the EU Commission's Standard Contractual Clauses (SCCs) to ensure an adequate level of data protection for such transfers.</p>
+            <p><strong>Data Collected:</strong> When you sign in with Google, we receive access to the data required to create your user account, primarily your <strong>email address</strong> and a <strong>unique user ID</strong> (Firebase UID). While Google may also provide your public profile name, we do not actively use this name within our app.</p>
+            <p><strong>Data Storage & Transfer:</strong> Your email address is stored within Firebase's Authentication system to uniquely identify your account. In our application database (Google Cloud Firestore), we only store your anonymous user ID along with your Pro status. Data processed by Google may also be transferred to countries outside the EU, such as the USA. Google uses the EU Commission's Standard Contractual Clauses (SCCs) to ensure an adequate level of data protection for such transfers.</p>
             <p><strong>Legal Basis:</strong> The processing of this data is for the fulfillment of a contract (provision of Pro features) in accordance with Art. 6(1)(b) GDPR.</p>
             
             <h3>Data Processing by Third Parties (Google Play Billing)</h3>
@@ -54,13 +54,13 @@
             <ul>
                 <li><strong>Display over other apps (SYSTEM_ALERT_WINDOW):</strong> Required to display the dimmer overlay above other apps.</li>
                 <li><strong>Run at startup (RECEIVE_BOOT_COMPLETED):</strong> Needed to reactivate the Routine feature after the device restarts.</li>
-                <li><strong>Ignore battery optimizations (REQUEST_IGNORE_BAT-TERY_OPTIMIZATIONS):</strong> Ensures that scheduled routines can run reliably in the background.</li>
+                <li><strong>Ignore battery optimizations (REQUEST_IGNORE_BATTERY_OPTIMIZATIONS):</strong> Ensures that scheduled routines can run reliably in the background.</li>
                 <li><strong>Foreground service & Notifications (FOREGROUND_SERVICE & POST_NOTIFICATIONS):</strong> Required for stable operation and to display a permanent notification for transparency, as mandated by Android.</li>
             </ul>
 
             <h2>Your Rights as a User</h2>
             <p>You have the right to access, rectification, erasure, restriction of processing, objection to processing, and data portability. To exercise these rights, please contact us. <strong>Please note that exercising your right to erasure will result in the permanent loss of any associated purchased content, such as the "Pro" status.</strong></p>
-            <p>You also have the right to lodge a complaint with a data protection supervisory authority. The authority responsible for us is the: <strong>Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen (LDI NRW)</strong>.</p>
+            <p>You also have the right to lodge a complaint with a data protection supervisory authority. The authority responsible for us is the: <strong>State Commissioner for Data Protection and Freedom of Information of Baden-Württemberg (LfDI BW)</strong>.</p>
             
             <h2>Children's Privacy</h2>
             <p>Our app is not directed at children under the age of 13 (or the applicable age in your region). We do not knowingly collect personal data from children. If we become aware that we have inadvertently processed personal data of a child, we will take steps to promptly delete such data. Parents or legal guardians can contact us at any time.</p>
@@ -87,8 +87,8 @@
 
             <h3>Google-Anmeldung (Firebase Authentication)</h3>
             <p><strong>Zweck der Datenverarbeitung:</strong> Um Ihren „Pro“-Status sicher mit Ihrem Konto zu verknüpfen, bietet diese App eine Anmeldeoption über ein Google-Konto. Dieser Dienst wird von der Google Ireland Limited bereitgestellt. Dies ermöglicht es Ihnen, freigeschaltete Funktionen auf mehreren Geräten zu nutzen. Die Verarbeitung erfolgt auf Grundlage eines Auftragsverarbeitungsvertrags (AVV) gemäß Art. 28 DSGVO. Wir erhalten keinen Zugriff auf Ihr Google-Passwort; dies wird ausschließlich von Google verwaltet.</p>
-            <p><strong>Erhobene Daten:</strong> Bei der Anmeldung erhalten wir Zugriff auf Ihre E-Mail-Adresse, Ihren Namen und eine einzigartige Nutzer-ID (Firebase UID).</p>
-            <p><strong>Speicherung & Datentransfer:</strong> Ihre E-Mail-Adresse und Ihr Name werden im Authentifizierungssystem von Firebase gespeichert. In unserer Anwendungs-Datenbank (Google Cloud Firestore) speichern wir ausschließlich Ihre anonyme Nutzer-ID mit Ihrem Pro-Status. Daten können auch in Länder außerhalb der EU (z.B. die USA) übertragen werden. Google sichert dies über Standardvertragsklauseln (SCCs) der EU-Kommission ab.</p>
+            <p><strong>Erhobene Daten:</strong> Bei der Anmeldung erhalten wir Zugriff auf die zur Erstellung Ihres Nutzerkontos notwendigen Daten, primär Ihre <strong>E-Mail-Adresse</strong> und eine <strong>einzigartige Nutzer-ID</strong> (Firebase UID). Auch wenn Google uns ggf. Ihren öffentlichen Profilnamen übermittelt, wird dieser von uns nicht aktiv innerhalb der App genutzt.</p>
+            <p><strong>Speicherung & Datentransfer:</strong> Ihre E-Mail-Adresse wird im Authentifizierungssystem von Firebase gespeichert. In unserer Anwendungs-Datenbank (Google Cloud Firestore) speichern wir ausschließlich Ihre anonyme Nutzer-ID mit Ihrem Pro-Status. Daten können auch in Länder außerhalb der EU (z.B. die USA) übertragen werden. Google sichert dies über Standardvertragsklauseln (SCCs) der EU-Kommission ab.</p>
             <p><strong>Rechtsgrundlage:</strong> Die Verarbeitung erfolgt zur Erfüllung eines Vertrags (Bereitstellung der Pro-Funktionen) gemäß Art. 6 Abs. 1 lit. b DSGVO.</p>
             
             <h3>Datenverarbeitung durch Drittanbieter (Google Play Billing)</h3>
@@ -116,7 +116,7 @@
 
             <h2>Ihre Rechte als Nutzer</h2>
             <p>Ihnen stehen die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Widerspruch und Datenübertragbarkeit zu. Zur Geltendmachung kontaktieren Sie uns bitte. <strong>Bitte beachten Sie, dass die Löschung Ihrer Daten zum unwiderruflichen Verlust des damit verknüpften „Pro-Status“ führt.</strong></p>
-            <p>Ihnen steht zudem das Recht zu, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren. Die für uns zuständige Behörde ist die: <strong>Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen (LDI NRW)</strong>.</p>
+            <p>Ihnen steht zudem das Recht zu, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren. Die für uns zuständige Behörde ist: <strong>Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg (LfDI BW)</strong>.</p>
             
             <h2>Datenschutz für Kinder</h2>
             <p>Unsere App richtet sich nicht an Kinder unter 13 Jahren (bzw. dem in Ihrer Region geltenden Mindestalter). Wir erfassen nicht wissentlich personenbezogene Daten von Kindern. Sollten wir Kenntnis davon erhalten, dass wir versehentlich solche Daten verarbeitet haben, werden wir diese Daten umgehend löschen. Erziehungsberechtigte können uns jederzeit kontaktieren.</p>
