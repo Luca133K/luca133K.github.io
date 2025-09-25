@@ -3,129 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy & Datenschutzerklärung - TvDimmer</title>
+    <title>TvDimmer Privacy Policy & Datenschutzerklärung | TribalApps</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 20px; background-color: #f5f5f7; color: #333; }
         .container { background-color: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
         h1, h2, h3 { color: #111; }
+        h2 { margin-top: 30px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
         hr { border: 0; height: 1px; background-color: #ddd; margin: 40px 0; }
+        p, li { font-size: 16px; }
+        strong { color: #111; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Privacy Policy for TvDimmer - NightCompanion</h1>
-        <p><em>Last updated: September 23, 2025</em></p>
-        
-        <h2>Data Controller</h2>
-        <p>The party responsible for this app is:<br>
-        TribalApps<br>
-        <strong>Luca Franz<br>c/o Online-Impressum.de #3520<br>Europaring 90<br>53757 Sankt Augustin</strong><br>
-        Contact: contact.tribalapps@gmail.com<br>
-        Further contact option: <a href="https://www.mein.online-impressum.de/tribalapps/">Imprint & Contact</a></p>
+        <div lang="en">
+            <h1>Privacy Policy for TvDimmer - NightCompanion</h1>
+            <p><em>Last updated: September 25, 2025</em></p>
+            
+            <h2>Data Controller</h2>
+            <p>The party responsible for this app is:<br>
+            TribalApps<br>
+            <strong>Your Name / Company<br>Karlsruhe, Germany</strong><br>
+            Contact: contact.tribalapps@gmail.com<br>
+            Further contact option (Impressum): <a href="https://www.mein.online-impressum.de/tribalapps/" target="_blank" rel="noopener noreferrer">Imprint & Contact</a></p>
 
-        <h2>Data Collection and Usage</h2>
-        <p>Our philosophy is to be as data-frugal as possible. Most features of the app can be used without providing any personal data.</p>
-        
-        <h3>Google Sign-In (Firebase Authentication)</h3>
-        <p><strong>Purpose of Processing:</strong> To securely link your "Pro" status to your account, this app offers a sign-in option via a Google account. This service is provided by "Firebase Authentication," a service of Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland. This allows you to use unlocked features across multiple devices and restore them after a reinstallation.</p>
-        <p><strong>Data Collected:</strong> When you sign in with Google, we receive access to the following data provided by Google:
+            <h2>Data Collection and Usage</h2>
+            
+            <h3>Google Sign-In (Firebase Authentication)</h3>
+            <p><strong>Purpose of Processing:</strong> To securely link your "Pro" status to your account, this app offers a sign-in option via a Google account. This service is provided by "Firebase Authentication," a service of Google Ireland Limited. This allows you to use unlocked features across multiple devices. Data processing by Google Firebase is based on a Data Processing Agreement (Art. 28 GDPR). We do not receive access to your Google password.</p>
+            <p><strong>Data Collected:</strong> When you sign in with Google, we receive your email address, name, and a unique user ID (Firebase UID).</p>
+            <p><strong>Data Storage & Transfer:</strong> Email and name are stored in Firebase Authentication. In our Firestore database, only the anonymous user ID and Pro status are stored. Data may be transferred outside the EU, e.g., to the USA, under Google's Standard Contractual Clauses.</p>
+            <p><strong>Legal Basis:</strong> Processing is required for contract fulfillment (Pro features) under Art. 6(1)(b) GDPR.</p>
+            
+            <h3>Data Processing by Third Parties (Google Play Billing)</h3>
+            <p>Purchases are handled directly by Google Play Billing. We do not receive your payment data. More info: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.</p>
+
+            <h3>Contact via Email</h3>
+            <p>Data you provide via email (name, email address, message) is processed only to respond to your inquiry and deleted afterward, unless legal retention applies.</p>
+
+            <h2>Data Retention</h2>
+            <p>We store personal data only as long as necessary or legally required. Firebase Authentication data is deleted when you delete your account. Contact us anytime to request deletion.</p>
+            
+            <h2>Data Stored Locally on Your Device</h2>
+            <p>Settings (Filter, Routine, Theme) are stored only on your device via Android SharedPreferences. These never leave your device.</p>
+
+            <h2>Data Security</h2>
+            <p>We implement technical and organizational security measures, but cannot guarantee absolute security over the internet.</p>
+            
+            <h2>Required App Permissions</h2>
             <ul>
-                <li>Your email address</li>
-                <li>Your name</li>
-                <li>A unique user ID (Firebase UID)</li>
+                <li><strong>Display over other apps:</strong> Required for the dimmer overlay.</li>
+                <li><strong>Run at startup:</strong> Reactivates routines after device restart.</li>
+                <li><strong>Ignore battery optimizations:</strong> Ensures routines run reliably in the background.</li>
+                <li><strong>Foreground service & notifications:</strong> Required for stable operation and transparency notification.</li>
             </ul>
-        Your email address and name are stored <strong>within Firebase's Authentication system</strong> to uniquely identify your account. However, in our own application database (Google Cloud Firestore), we only store your anonymous user ID along with your Pro status (e.g., <code>ownedSkus: ["premium"]</code>). This ensures that your purchase data is linked with the minimum amount of personal information necessary.</p>
-        <p><strong>Legal Basis:</strong> The processing of this data is for the fulfillment of a contract (provision of Pro features) in accordance with Art. 6(1)(b) GDPR.</p>
 
-        <h3>Data Processing by Third Parties</h3>
-        <p><strong>Google Firebase (Firestore):</strong> To verify redeem codes for the Pro version, the app sends the entered code to the Google Firebase Firestore service for validation. This process is anonymous and does not transmit any personal data or device identifiers.</p>
-        <p><strong>Google Play Billing:</strong> To purchase the "Pro" version or other paid content, we use the Google Play Billing service. When you make a purchase, the necessary data for processing (such as payment information) is handled directly by Google. We do not receive access to your sensitive payment data. Google's privacy policy applies.</p>
-        <p>For more information on how Google handles your data, please see Google's Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
-        
-        <h2>Data Stored Locally on Your Device</h2>
-        <p>To ensure the app's functionality, certain settings are stored exclusively on your device. This data never leaves your device and includes: Filter Settings, Routine Settings, and your Theme Setting. This data is stored using Android's internal SharedPreferences function and can be removed by the user at any time by clearing the app's cache or uninstalling the app.</p>
+            <h2>Your Rights as a User</h2>
+            <p>You have rights to access, correction, deletion, restriction, objection, and data portability. Exercising deletion will permanently remove associated Pro content.</p>
+            <p>You may also file a complaint with the competent supervisory authority: <strong>Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg (LfDI BW)</strong>.</p>
+            
+            <h2>Children's Privacy</h2>
+            <p>Our app is not directed at children under 13. We do not knowingly collect children's personal data. If discovered, it will be deleted. Parents/legal guardians can contact us.</p>
 
-        <h2>Required App Permissions</h2>
-        <p><strong>Display over other apps (SYSTEM_ALERT_WINDOW):</strong> This permission is the core feature of the app. It allows us to place a semi-transparent color filter over the entire screen.</p>
-        <p><strong>Run at startup (RECEIVE_BOOT_COMPLETED):</strong> This permission is required so that the "Routine" feature can become active after you restart your TV.</p>
-        <p><strong>Ignore battery optimizations (REQUEST_IGNORE_BATTERY_OPTIMIZATIONS):</strong> To ensure that the "Routine" feature works reliably at the scheduled times, the app must be able to run in the background without being shut down by the operating system's power-saving measures.</p>
-        <p><strong>Foreground service & Notifications (FOREGROUND_SERVICE & POST_NOTIFICATIONS):</strong> To function correctly, the dimmer service must run as a foreground service. Android requires that such services display a permanent notification to ensure transparency for the user.</p>
-
-        <h2>Your Rights as a User</h2>
-        <p>You have the following legal rights regarding your personal data:</p>
-        <ul>
-            <li>Right of access</li>
-            <li>Right to rectification or erasure</li>
-            <li>Right to restriction of processing</li>
-            <li>Right to object to processing</li>
-            <li>Right to data portability</li>
-        </ul>
-        <p>To exercise any of these rights, please contact us via the email address provided in the "Data Controller" section. <strong>Please note that exercising your right to erasure will result in the permanent loss of any associated purchased content, such as the "Pro" status, as we can no longer associate the purchase with your account without this data.</strong></p>
-        <p>You also have the right to lodge a complaint with a data protection supervisory authority about our processing of your personal data.</p>
-        
-        <h2>Links to Third Parties</h2>
-        <p><strong>Rate App:</strong> This feature links directly to our app's page on the Google Play Store. When you click it, Google's privacy policy applies.</p>
-        
-        <h2>Changes to This Privacy Policy</h2>
-        <p>We reserve the right to adapt this privacy policy so that it always complies with the current legal requirements. The new privacy policy will be valid for your next visit.</p>
-
+            <h2>Links to Third-Party Websites</h2>
+            <p>Links (AGB, YouTube, Google Play) lead to external sites. We are not responsible for their data processing.</p>
+            
+            <h2>Changes to This Privacy Policy</h2>
+            <p>We reserve the right to update this policy to comply with current legal requirements.</p>
+        </div>
         <hr>
+        <div lang="de">
+            <h1>Datenschutzerklärung für TvDimmer - NightCompanion</h1>
+            <p><em>Stand: 25. September 2025</em></p>
+            
+            <h2>Verantwortlicher</h2>
+            <p>Verantwortlich für diese App ist:<br>
+            TribalApps<br>
+            <strong>Ihr Name / Unternehmen<br>Karlsruhe, Deutschland</strong><br>
+            Kontakt: contact.tribalapps@gmail.com<br>
+            Weitere Kontaktmöglichkeit (Impressum): <a href="https://www.mein.online-impressum.de/tribalapps/" target="_blank" rel="noopener noreferrer">Impressum & Kontakt</a></p>
 
-        <h1>Datenschutzerklärung für TvDimmer - NightCompanion</h1>
-        <p><em>Stand: 23. September 2025</em></p>
-        
-        <h2>Verantwortlicher</h2>
-        <p>Verantwortlich für diese App ist:<br>
-        TribalApps<br>
-        <strong>Luca Franz<br>c/o Online-Impressum.de #3520<br>Europaring 90<br>53757 Sankt Augustin</strong><br>
-        Kontakt: contact.tribalapps@gmail.com<br>
-        Weitere Kontaktmöglichkeit: <a href="https://www.mein.online-impressum.de/tribalapps/">Impressum & Kontakt</a></p>
+            <h2>Datenerhebung und -verwendung</h2>
 
-        <h2>Datenerhebung und -verwendung</h2>
-        <p>Unsere Philosophie ist es, so datensparsam wie möglich zu sein. Die meisten Funktionen der App können ohne die Angabe von personenbezogenen Daten genutzt werden.</p>
+            <h3>Google-Anmeldung (Firebase Authentication)</h3>
+            <p><strong>Zweck:</strong> Sicheres Verknüpfen Ihres Pro-Status mit Ihrem Konto. Datenverarbeitung durch Google Ireland Limited gemäß Art. 28 DSGVO. Wir erhalten keinen Zugriff auf Ihr Passwort.</p>
+            <p><strong>Erhobene Daten:</strong> E-Mail, Name, Firebase UID.</p>
+            <p><strong>Speicherung & Transfer:</strong> E-Mail & Name in Firebase Authentication. Firestore speichert nur UID + Pro-Status. Daten können außerhalb der EU übertragen werden (z.B. USA) via Standardvertragsklauseln.</p>
+            <p><strong>Rechtsgrundlage:</strong> Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO).</p>
 
-        <h3>Google-Anmeldung (Firebase Authentication)</h3>
-        <p><strong>Zweck der Datenverarbeitung:</strong> Um Ihren „Pro“-Status sicher mit Ihrem Konto zu verknüpfen, bietet diese App eine Anmeldeoption über ein Google-Konto. Diese Funktion wird über „Firebase Authentication“, einen Dienst der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland, bereitgestellt. Dies ermöglicht es Ihnen, freigeschaltete Funktionen auf mehreren Geräten zu nutzen und nach einer Neuinstallation der App wiederherzustellen.</p>
-        <p><strong>Erhobene Daten:</strong> Wenn Sie sich über Google anmelden, erhalten wir Zugriff auf folgende von Google bereitgestellte Daten:
+            <h3>Datenverarbeitung durch Drittanbieter (Google Play Billing)</h3>
+            <p>Abwicklung direkt durch Google. Wir erhalten keine Zahlungsdaten. Weitere Infos: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Datenschutzerklärung von Google</a>.</p>
+
+            <h3>Kontaktaufnahme per E-Mail</h3>
+            <p>Daten werden nur zur Bearbeitung Ihrer Anfrage verarbeitet und danach gelöscht, sofern keine gesetzlichen Aufbewahrungspflichten bestehen.</p>
+
+            <h2>Speicherdauer</h2>
+            <p>Personenbezogene Daten werden nur so lange gespeichert, wie nötig oder gesetzlich vorgeschrieben. Firebase Authentication Daten werden beim Löschen des Kontos endgültig entfernt. Löschanfragen jederzeit möglich.</p>
+            
+            <h2>Daten, die lokal auf Ihrem Gerät gespeichert werden</h2>
+            <p>Filter-, Routine- und Theme-Einstellungen werden nur lokal über Android SharedPreferences gespeichert und verlassen das Gerät nicht.</p>
+
+            <h2>Datensicherheit</h2>
+            <p>Technische und organisatorische Sicherheitsmaßnahmen werden umgesetzt, absolute Sicherheit kann jedoch nicht garantiert werden.</p>
+
+            <h2>Erforderliche App-Berechtigungen</h2>
             <ul>
-                <li>Ihre E-Mail-Adresse</li>
-                <li>Ihren Namen</li>
-                <li>Eine einzigartige Nutzer-ID (Firebase UID)</li>
+                <li><strong>Über anderen Apps einblenden:</strong> Dimm-Filter Anzeige.</li>
+                <li><strong>Beim Gerätestart ausführen:</strong> Reaktivierung von Routinen nach Neustart.</li>
+                <li><strong>Akku-Optimierungen ignorieren:</strong> Sicherstellung zuverlässiger Hintergrundausführung.</li>
+                <li><strong>Vordergrunddienst & Benachrichtigungen:</strong> Stabiler Betrieb und Transparenz.</li>
             </ul>
-        Ihre E-Mail-Adresse und Ihr Name werden <strong>im Authentifizierungssystem von Firebase</strong> gespeichert, um Ihr Konto eindeutig identifizieren zu können. In unserer eigenen Anwendungs-Datenbank (Google Cloud Firestore) speichern wir jedoch ausschließlich Ihre anonyme Nutzer-ID zusammen mit Ihrem Pro-Status (z. B. <code>ownedSkus: ["premium"]</code>). So stellen wir sicher, dass die Verknüpfung Ihrer Käufe mit so wenigen persönlichen Daten wie möglich erfolgt.</p>
-        <p><strong>Rechtsgrundlage:</strong> Die Verarbeitung dieser Daten erfolgt zur Erfüllung eines Vertrags (Bereitstellung der Pro-Funktionen) gemäß Art. 6 Abs. 1 lit. b DSGVO.</p>
-        
-        <h3>Datenverarbeitung durch Drittanbieter</h3>
-        <p><strong>Google Firebase (Firestore):</strong> Zur Überprüfung von Einlösecodes für die Pro-Version sendet die App den eingegebenen Code zur Validierung an den Dienst Google Firebase Firestore. Dieser Vorgang ist anonym und übermittelt keine personenbezogenen Daten oder Gerätekennungen.</p>
-        <p><strong>Google Play Billing:</strong> Für den Erwerb der „Pro“-Version oder anderer kostenpflichtiger Inhalte nutzen wir den Abrechnungsdienst von Google Play. Bei einem Kauf werden die für die Abwicklung notwendigen Daten (wie z.B. Zahlungsinformationen) direkt von Google verarbeitet. Wir erhalten keinen Zugriff auf Ihre sensiblen Zahlungsdaten. Es gelten hierfür die Datenschutzbestimmungen von Google.</p>
-        <p>Weitere Informationen zum Datenschutz bei Google finden Sie in der Datenschutzerklärung von Google: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
-        
-        <h2>Daten, die lokal auf Ihrem Gerät gespeichert werden</h2>
-        <p>Um die Funktionalität der App zu gewährleisten, werden bestimmte Einstellungen ausschließlich auf Ihrem Gerät gespeichert. Diese Daten verlassen Ihr Gerät zu keinem Zeitpunkt und umfassen: Filter-Einstellungen, Routine-Einstellungen und Ihre Theme-Einstellung. Diese Daten werden mithilfe der Android-internen SharedPreferences-Funktion gespeichert und können vom Nutzer jederzeit durch das Löschen des App-Caches oder die Deinstallation der App entfernt werden.</p>
-        
-        <h2>Erforderliche App-Berechtigungen</h2>
-        <p><strong>Über anderen Apps einblenden (SYSTEM_ALERT_WINDOW):</strong> Diese Berechtigung ist die Kernfunktion der App. Sie erlaubt es uns, einen halbtransparenten Farbfilter über den gesamten Bildschirm zu legen.</p>
-        <p><strong>Beim Gerätestart ausführen (RECEIVE_BOOT_COMPLETED):</strong> Diese Berechtigung wird benötigt, damit die „Routine“-Funktion aktiv werden kann, nachdem Sie Ihren Fernseher neu gestartet haben.</p>
-        <p><strong>Akku-Optimierungen ignorieren (REQUEST_IGNORE_BATTERY_OPTIMIZATIONS):</strong> Damit die „Routine“-Funktion zuverlässig zu den eingestellten Zeiten funktioniert, muss die App im Hintergrund laufen können, ohne von den Stromsparmaßnahmen des Betriebssystems beendet zu werden.</p>
-        <p><strong>Vordergrunddienst & Benachrichtigungen (FOREGROUND_SERVICE & POST_NOTIFICATIONS):</strong> Für eine stabile Funktion muss der Dimmer-Dienst als Vordergrunddienst ausgeführt werden. Android schreibt für solche Dienste die Anzeige einer dauerhaften Benachrichtigung vor, um Transparenz für den Nutzer zu gewährleisten.</p>
 
-        <h2>Ihre Rechte als Nutzer</h2>
-        <p>Ihnen stehen bezüglich Ihrer personenbezogenen Daten folgende gesetzliche Rechte zu:</p>
-        <ul>
-            <li>Recht auf Auskunft</li>
-            <li>Recht auf Berichtigung oder Löschung</li>
-            <li>Recht auf Einschränkung der Verarbeitung</li>
-            <li>Recht auf Widerspruch gegen die Verarbeitung</li>
-            <li>Recht auf Datenübertragbarkeit</li>
-        </ul>
-        <p>Wenn Sie eines dieser Rechte geltend machen möchten, kontaktieren Sie uns bitte über die im Abschnitt „Verantwortlicher“ genannte E-Mail-Adresse. <strong>Bitte beachten Sie, dass die Löschung Ihrer Daten dazu führt, dass auch damit verknüpfte erworbene Inhalte wie der „Pro-Status“ unwiderruflich verloren gehen, da wir ohne diese Daten keine Zuordnung mehr vornehmen können.</strong></p>
-        <p>Ihnen steht zudem das Recht zu, sich bei einer Datenschutz-Aufsichtsbehörde über die Verarbeitung Ihrer personenbezogenen Daten durch uns zu beschweren.</p>
+            <h2>Ihre Rechte als Nutzer</h2>
+            <p>Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch, Datenübertragbarkeit. Löschung führt zum Verlust des Pro-Status.</p>
+            <p>Beschwerden können bei der zuständigen Aufsichtsbehörde eingereicht werden: <strong>Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg (LfDI BW)</strong>.</p>
+            
+            <h2>Datenschutz für Kinder</h2>
+            <p>App nicht für Kinder unter 13 Jahre. Keine bewusste Erhebung von Daten. Entdeckung → Löschung. Kontakt für Eltern/Erziehungsberechtigte möglich.</p>
 
-        <h2>Links zu Drittanbietern</h2>
-        <p><strong>App bewerten:</strong> Diese Funktion verlinkt direkt auf die Seite unserer App im Google Play Store. Wenn Sie darauf klicken, gelten die Datenschutzbestimmungen von Google.</p>
-
-        <h2>Änderungen an dieser Datenschutzerklärung</h2>
-        <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.</p>
+            <h2>Links zu Drittanbietern</h2>
+            <p>Externe Links (AGB, YouTube, Google Play) unterliegen nicht unserer Kontrolle.</p>
+            
+            <h2>Änderungen an dieser Datenschutzerklärung</h2>
+            <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, um rechtliche Anforderungen zu erfüllen.</p>
+        </div>
     </div>
 </body>
 </html>
