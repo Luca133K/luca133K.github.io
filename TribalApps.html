@@ -19,11 +19,8 @@
         .product-card { margin-top: 20px; padding: 20px; border: 1px solid #eee; border-radius: 8px; }
         .product-card h3 { margin-top: 0; }
         
-        /* --- HIER SIND DIE ÄNDERUNGEN --- */
-        
         .product-link { display: inline-block; padding: 10px 20px; background-color: #007aff; color: #fff; text-decoration: none; border-radius: 5px; }
         
-        /* NEU: Container, der den Button und die Links nebeneinander anordnet */
         .product-actions {
             display: flex;
             justify-content: space-between;
@@ -33,13 +30,18 @@
             padding-top: 20px;
         }
 
-        /* GEÄNDERT: Styling für die Rechts-Links, jetzt ohne Ränder oben */
         .product-legal {
             font-size: 14px;
         }
+
+        /* --- HIER IST DIE ÄNDERUNG --- */
         .product-legal a {
-            margin-left: 20px; /* Abstand zwischen den Links */
-            color: #555;
+            margin-left: 20px;
+            color: #007aff; /* GEÄNDERT: Farbe auf Blau gesetzt */
+            text-decoration: none; /* Optional: Unterstreichung entfernen */
+        }
+        .product-legal a:hover {
+            text-decoration: underline; /* Optional: Unterstreichung beim Darüberfahren */
         }
 
     </style>
