@@ -14,13 +14,15 @@
         
         .impressum { margin-top: 20px; padding: 20px; background-color: #f9f9f9; border: 1px solid #eee; border-radius: 5px; font-size: 14px; text-align: center; }
         .impressum h2 { border-bottom: none; margin-top: 0; }
+        .impressum a { color: #007aff; }
 
         .product-card { margin-top: 20px; padding: 20px; border: 1px solid #eee; border-radius: 8px; }
         .product-card h3 { margin-top: 0; }
         .product-link { display: inline-block; margin-top: 15px; padding: 10px 20px; background-color: #007aff; color: #fff; text-decoration: none; border-radius: 5px; }
         
-        .legal-links { margin-top: 40px; }
-        .legal-links a { margin-right: 20px; }
+        /* NEU: Styling für die kompakten rechtlichen Links in der Produkt-Karte */
+        .product-legal { margin-top: 25px; border-top: 1px solid #eee; padding-top: 15px; font-size: 14px; }
+        .product-legal a { margin-right: 15px; color: #555; }
     </style>
 </head>
 <body>
@@ -43,7 +45,8 @@
             </p>
             <p>
                 <strong>Contact:</strong><br>
-                Email: contact.tribalapps@gmail.com
+                Email: <a href="mailto:contact.tribalapps@gmail.com">contact.tribalapps@gmail.com</a><br>
+                Official Legal Notice: <a href="https://www.mein.online-impressum.de/tribalapps" target="_blank" rel="noopener noreferrer">mein.online-impressum.de/tribalapps</a>
             </p>
         </div>
 
@@ -53,15 +56,15 @@
             <h3>TvDimmer - NightCompanion</h3>
             <p>The official app page for the Android TV app "TvDimmer - NightCompanion".</p>
             <a href="[LINK TO TVDIMMER ON PLAY STORE]" class="product-link">View on Google Play</a>
+
+            <div class="product-legal">
+                <strong>Legal Documents:</strong>
+                <a href="https://luca133k.github.io/agb.html">Terms & Conditions</a>
+                <a href="https://luca133k.github.io/index.html">Privacy Policy</a>
+                <a href="https://luca133k.github.io/datenloeschung.html">Data Deletion</a>
+            </div>
         </div>
 
-        <div class="legal-links">
-            <h2>Legal Documents for TvDimmer</h2>
-            <a href="agb.html">Terms & Conditions</a>
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="datenloeschung.html">Data Deletion</a>
         </div>
-
-    </div>
 </body>
 </html>
